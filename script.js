@@ -94,16 +94,19 @@ const statObserver = new IntersectionObserver((entries) => {
 
 statNumbers.forEach((number) => statObserver.observe(number));
 
+const sectionNavItems = [...navItems].filter((link) => link.getAttribute('href')?.startsWith('#'));
 const sections = [...document.querySelectorAll('main section[id]')];
-const activeObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    navItems.forEach((link) => {
-      link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+if (sectionNavItems.length) {
+  const activeObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      sectionNavItems.forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+      });
     });
-  });
-}, { rootMargin: '-40% 0px -55% 0px' });
-sections.forEach((section) => activeObserver.observe(section));
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach((section) => activeObserver.observe(section));
+}
 
 const openLightbox = (img) => {
   if (!lightbox || !lightboxImg) return;
