@@ -325,6 +325,9 @@ button, input, textarea, select { font: inherit; }
 .hero-panel {
   align-self: end;
   padding: 24px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
   background:
     linear-gradient(145deg, rgba(246, 250, 253, 0.70), rgba(179, 207, 229, 0.38));
   color: var(--ink);
@@ -334,12 +337,13 @@ button, input, textarea, select { font: inherit; }
   backdrop-filter: blur(16px) saturate(138%);
 }
 .hero-panel img {
-  width: 216px;
-  margin-bottom: 18px;
+  width: min(280px, 88%);
+  margin-bottom: 24px;
   background: transparent;
 }
 .hero-panel span {
   display: block;
+  width: 100%;
   color: var(--forest-2);
   font-weight: 700;
   text-transform: uppercase;
@@ -347,7 +351,7 @@ button, input, textarea, select { font: inherit; }
 }
 .hero-panel strong {
   display: block;
-  margin-top: 4px;
+  margin-top: 6px;
   color: var(--forest);
   font-family: var(--font-heading);
   font-size: 2.15rem;
@@ -355,7 +359,7 @@ button, input, textarea, select { font: inherit; }
   line-height: 1;
 }
 .hero-panel p {
-  margin: 18px 0 0;
+  margin: 18px auto 0;
   color: var(--charcoal-2);
 }
 
@@ -1074,7 +1078,7 @@ address {
   .hero h1 { font-size: clamp(2.15rem, 9vw, 3.15rem); }
   .hero-actions,
   .btn { width: 100%; }
-  .hero-panel img { width: 124px; }
+  .hero-panel img { width: min(240px, 82%); }
   .program-grid,
   .identity-grid,
   .metric-grid,
