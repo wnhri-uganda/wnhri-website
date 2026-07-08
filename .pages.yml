@@ -1,0 +1,68 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: site_settings
+    label: Site Settings
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: organizationName
+        label: Organization Full Name
+        type: string
+      - name: shortName
+        label: Short Name
+        type: string
+      - name: founderName
+        label: Founder Name
+        type: string
+      - name: motto
+        label: Motto
+        type: string
+      - name: heroLabel
+        label: Hero Label
+        type: string
+      - name: heroTitle
+        label: Hero Title
+        type: string
+      - name: heroText
+        label: Hero Text
+        type: text
+      - name: mission
+        label: Mission
+        type: text
+      - name: vision
+        label: Vision
+        type: text
+      - name: contact
+        label: Contact
+        type: object
+        fields:
+          - name: email
+            label: Email
+            type: string
+          - name: whatsapp
+            label: WhatsApp
+            type: string
+          - name: mobileMoney
+            label: Mobile Money
+            type: string
+          - name: phone
+            label: Phone
+            type: string
+          - name: address
+            label: Address
+            type: text
+      - name: programs
+        label: Programs
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: text

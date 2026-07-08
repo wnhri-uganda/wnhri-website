@@ -1,12 +1,64 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>WNHRI Content Manager</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: #0A1931;
+      background: linear-gradient(135deg, #F6FAFD, #B3CFE5);
+    }
+    main {
+      width: min(100%, 560px);
+      padding: 34px;
+      background: rgba(246, 250, 253, 0.88);
+      border: 1px solid rgba(10, 25, 49, 0.12);
+      border-radius: 12px;
+      box-shadow: 0 22px 60px rgba(10, 25, 49, 0.16);
+    }
+    img {
+      width: 170px;
+      display: block;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 1.8rem;
+      line-height: 1.1;
+    }
+    p {
+      margin: 0 0 20px;
+      color: #1A3D63;
+      line-height: 1.6;
+    }
+    a {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      color: white;
+      background: #0A1931;
+      border-radius: 8px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <main>
+    <img src="/assets/logo.png" alt="WNHRI logo" />
+    <h1>WNHRI Content Manager</h1>
+    <p>Content editing is configured through Pages CMS. Sign in with the GitHub account that has access to the WNHRI website repository.</p>
+    <a href="https://app.pagescms.org/" rel="noopener">Open Pages CMS</a>
+  </main>
 </body>
 </html>

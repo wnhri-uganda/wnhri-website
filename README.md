@@ -1,34 +1,45 @@
 # WNHRI Website
 
-Static website for West Nile Hope & Resilience Initiative (WNHRI), prepared for `https://wnhri.org`.
+Static website for West Nile Hope & Resilience Initiative (WNHRI), prepared for `https://wnhri.org` and deployment on Vercel.
+
+## Deployment
+
+Deploy this repository on Vercel as a static site:
+
+- Framework Preset: `Other`
+- Build Command: leave empty
+- Output Directory: leave empty
+- Domain: `wnhri.org`
+
+The project includes `vercel.json` for static asset caching and basic security headers.
+
+## CMS
+
+The free CMS path for this Vercel deployment is Pages CMS.
+
+- CMS app: `https://app.pagescms.org/`
+- Config file: `.pages.yml`
+- Editable content: `content/site.json`
+- Future image uploads: `assets/uploads`
+
+Install/connect Pages CMS to the GitHub repository `wnhri-uganda/wnhri-website`, then sign in with a GitHub account that has access to the repo.
+
+The `/admin/` page now points editors to Pages CMS.
 
 ## SEO
 
 - `index.html` includes canonical URL, Open Graph tags, and JSON-LD structured data.
 - `sitemap.xml` lists the homepage and crawlable sitelink pages.
 - `robots.txt` points search engines to the sitemap.
-- Google sitelinks cannot be forced, but the page structure gives Google clear links to show: About, Programs, Founder, Gallery, and Contact.
+- Navigation and sitemap include About, Programs, Founder, Donate, Gallery, and Contact.
+
+Google ranking and sitelinks cannot be forced. The site is prepared correctly, but Google decides when to rank it and which extra links to show.
 
 After deployment, add the domain to Google Search Console and submit:
 
 ```text
 https://wnhri.org/sitemap.xml
 ```
-
-## CMS
-
-Decap CMS is available at:
-
-```text
-https://wnhri.org/admin/
-```
-
-The CMS currently edits:
-
-- `content/site.json` for homepage text, founder name, contact details, mission, vision, and program summaries.
-- `content/updates/` for future news/update posts.
-
-The current CMS config uses Netlify Git Gateway. If the site is hosted somewhere else, change `admin/config.yml` to the correct Decap CMS backend.
 
 ## Local Preview
 
