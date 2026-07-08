@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
+
 :root {
   --ink: #151827;
   --muted: #697386;
@@ -14,8 +16,8 @@
   --shadow: 0 22px 60px rgba(7, 19, 18, 0.18);
   --radius: 8px;
   --max: 1180px;
-  --font-body: "Segoe UI", "Aptos", "Helvetica Neue", Arial, sans-serif;
-  --font-heading: "Segoe UI Variable Display", "Aptos Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", "Segoe UI", "Aptos", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 * { box-sizing: border-box; }
@@ -25,7 +27,9 @@ body {
   font-family: var(--font-body);
   color: var(--ink);
   background: var(--paper);
-  line-height: 1.6;
+  line-height: 1.58;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
@@ -93,8 +97,9 @@ button, input, textarea, select { font: inherit; }
 .brand strong {
   display: block;
   color: var(--forest-2);
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1;
+  font-weight: 800;
 }
 .brand small {
   display: block;
@@ -111,8 +116,8 @@ button, input, textarea, select { font: inherit; }
   padding: 10px 12px;
   border-radius: var(--radius);
   color: #26313f;
-  font-size: 0.94rem;
-  font-weight: 800;
+  font-size: 0.9rem;
+  font-weight: 700;
   transition: background 0.2s ease, color 0.2s ease;
 }
 .nav-links a:hover,
@@ -202,8 +207,8 @@ button, input, textarea, select { font: inherit; }
   align-items: center;
   gap: 10px;
   color: var(--gold);
-  font-size: 0.94rem;
-  font-weight: 850;
+  font-size: 0.84rem;
+  font-weight: 700;
 }
 .script-label::before {
   content: "";
@@ -217,22 +222,22 @@ button, input, textarea, select { font: inherit; }
 .founder-copy h2,
 .contact-copy h2,
 .donation-banner h2 {
-  margin: 14px 0 18px;
+  margin: 12px 0 16px;
   letter-spacing: 0;
-  line-height: 1.02;
+  line-height: 1.04;
 }
 .hero h1 {
   max-width: 850px;
   font-family: var(--font-heading);
-  font-size: clamp(2.7rem, 5.2vw, 5.1rem);
-  font-weight: 800;
+  font-size: clamp(2.45rem, 4.8vw, 4.65rem);
+  font-weight: 700;
   letter-spacing: 0;
 }
 .hero p {
-  max-width: 720px;
+  max-width: 660px;
   margin: 0;
   color: rgba(255, 255, 255, 0.86);
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-size: clamp(0.98rem, 1.25vw, 1.12rem);
 }
 .hero-actions {
   display: flex;
@@ -249,7 +254,8 @@ button, input, textarea, select { font: inherit; }
   padding: 13px 18px;
   border: 1px solid transparent;
   border-radius: var(--radius);
-  font-weight: 900;
+  font-size: 0.92rem;
+  font-weight: 800;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
@@ -287,7 +293,7 @@ button, input, textarea, select { font: inherit; }
 .hero-panel span {
   display: block;
   color: var(--forest-2);
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 0.74rem;
 }
@@ -295,7 +301,9 @@ button, input, textarea, select { font: inherit; }
   display: block;
   margin-top: 4px;
   color: var(--gold);
-  font-size: 2.05rem;
+  font-family: var(--font-heading);
+  font-size: 2.15rem;
+  font-weight: 700;
   line-height: 1;
 }
 .hero-panel p {
@@ -317,15 +325,16 @@ button, input, textarea, select { font: inherit; }
   max-width: 920px;
   margin: 16px 0;
   font-family: var(--font-heading);
-  font-size: clamp(2.45rem, 5vw, 4.6rem);
+  font-size: clamp(2.25rem, 4.5vw, 4.05rem);
+  font-weight: 700;
   letter-spacing: 0;
-  line-height: 1.02;
+  line-height: 1.04;
 }
 .subpage-hero p {
   max-width: 760px;
   margin: 0;
   color: rgba(255, 255, 255, 0.82);
-  font-size: 1.12rem;
+  font-size: 1.04rem;
 }
 
 .about-section {
@@ -385,7 +394,8 @@ button, input, textarea, select { font: inherit; }
 .collage-badge strong {
   display: block;
   font-family: var(--font-heading);
-  font-size: 1.7rem;
+  font-size: 1.55rem;
+  font-weight: 700;
   line-height: 1;
 }
 .collage-badge span {
@@ -399,9 +409,9 @@ button, input, textarea, select { font: inherit; }
   align-items: center;
   gap: 9px;
   color: var(--orange);
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
 }
 .eyebrow::before {
   content: "";
@@ -415,7 +425,8 @@ button, input, textarea, select { font: inherit; }
 .contact-copy h2 {
   color: #111827;
   font-family: var(--font-heading);
-  font-size: clamp(1.9rem, 3.1vw, 3rem);
+  font-size: clamp(1.75rem, 2.75vw, 2.65rem);
+  font-weight: 700;
   letter-spacing: 0;
 }
 .section-heading p,
@@ -424,7 +435,7 @@ button, input, textarea, select { font: inherit; }
 .contact-copy p {
   margin: 0;
   color: var(--muted);
-  font-size: 1.04rem;
+  font-size: 1rem;
 }
 .section-heading.centered {
   max-width: 660px;
@@ -444,7 +455,7 @@ button, input, textarea, select { font: inherit; }
   position: relative;
   padding-left: 26px;
   color: #273244;
-  font-weight: 800;
+  font-weight: 700;
 }
 .check-list li::before {
   content: "";
@@ -486,12 +497,12 @@ button, input, textarea, select { font: inherit; }
 }
 .identity-card span {
   color: var(--gold);
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
 }
 .identity-card h2 {
   color: white;
-  font-size: clamp(1.85rem, 3vw, 2.9rem);
+  font-size: clamp(1.75rem, 2.8vw, 2.65rem);
 }
 .identity-card p {
   color: rgba(255, 255, 255, 0.82);
@@ -531,12 +542,14 @@ button, input, textarea, select { font: inherit; }
   color: var(--charcoal);
   background: var(--gold);
   border-radius: 50%;
-  font-weight: 950;
+  font-weight: 800;
 }
 .program-card h3 {
   margin: 20px 0 8px;
   color: white;
-  font-size: 1.28rem;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
   line-height: 1.22;
 }
 .program-card p {
@@ -558,19 +571,21 @@ button, input, textarea, select { font: inherit; }
   margin: 4px 0 0;
   color: #20170a;
   font-family: var(--font-heading);
-  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-size: clamp(1.35rem, 1.8vw, 1.8rem);
+  font-weight: 700;
   line-height: 1.08;
 }
 .metric-grid span {
   color: rgba(32, 23, 10, 0.72);
   font-size: 0.86rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 .metric-grid strong {
   display: block;
   color: var(--charcoal);
   font-family: var(--font-heading);
-  font-size: clamp(1.9rem, 3vw, 3rem);
+  font-size: clamp(1.85rem, 2.75vw, 2.75rem);
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -599,7 +614,9 @@ button, input, textarea, select { font: inherit; }
   background: var(--cream);
   border-left: 5px solid var(--orange);
   border-radius: var(--radius);
-  font-size: 1.25rem;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 600;
   line-height: 1.4;
 }
 
@@ -652,7 +669,7 @@ button, input, textarea, select { font: inherit; }
   bottom: 14px;
   z-index: 1;
   color: white;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .donation-banner {
@@ -672,7 +689,8 @@ button, input, textarea, select { font: inherit; }
   max-width: 760px;
   color: white;
   font-family: var(--font-heading);
-  font-size: clamp(1.85rem, 3.2vw, 3rem);
+  font-size: clamp(1.75rem, 2.9vw, 2.7rem);
+  font-weight: 700;
 }
 
 .contact-section {
@@ -722,6 +740,7 @@ button, input, textarea, select { font: inherit; }
 .contact-cards strong {
   display: block;
   color: var(--forest-2);
+  font-weight: 700;
 }
 .contact-cards span {
   display: block;
@@ -773,14 +792,16 @@ address {
 .contact-form h3 {
   margin: 0 0 18px;
   color: var(--gold);
-  font-size: 1.55rem;
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
 }
 .contact-form label {
   display: grid;
   gap: 7px;
   margin-bottom: 15px;
   color: rgba(255, 255, 255, 0.86);
-  font-weight: 850;
+  font-weight: 700;
 }
 .contact-form input,
 .contact-form textarea,
@@ -846,7 +867,7 @@ address {
 }
 .footer-bottom a {
   color: var(--forest-2);
-  font-weight: 850;
+  font-weight: 700;
 }
 
 .lightbox {
@@ -960,7 +981,7 @@ address {
     padding: 66px 0 96px;
     gap: 28px;
   }
-  .hero h1 { font-size: clamp(2.2rem, 10vw, 3.45rem); }
+  .hero h1 { font-size: clamp(2.15rem, 9vw, 3.15rem); }
   .hero-actions,
   .btn { width: 100%; }
   .hero-panel img { width: 124px; }
@@ -1003,7 +1024,7 @@ address {
   .section-heading h2,
   .identity-card h2,
   .founder-copy h2,
-  .contact-copy h2 { font-size: clamp(1.85rem, 9vw, 2.65rem); }
+  .contact-copy h2 { font-size: clamp(1.7rem, 8vw, 2.35rem); }
   .collage-main,
   .collage-tall,
   .collage-small,
