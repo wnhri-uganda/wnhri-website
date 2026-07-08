@@ -211,14 +211,14 @@ button, input, textarea, select { font: inherit; }
   z-index: -4;
   object-fit: cover;
   object-position: center 36%;
-  filter: saturate(0.96) contrast(1.02) brightness(0.98);
+  filter: saturate(1.08) contrast(1.06) brightness(0.88);
 }
 .hero-shade {
   z-index: -3;
   background:
-    radial-gradient(circle at 82% 16%, rgba(179, 207, 229, 0.38), transparent 28%),
-    linear-gradient(90deg, rgba(246, 250, 253, 0.48) 0%, rgba(179, 207, 229, 0.22) 46%, rgba(10, 25, 49, 0.10) 100%),
-    linear-gradient(180deg, rgba(246, 250, 253, 0.36) 0%, rgba(246, 250, 253, 0.08) 100%);
+    radial-gradient(circle at 78% 16%, rgba(179, 207, 229, 0.32), transparent 28%),
+    linear-gradient(115deg, rgba(10, 25, 49, 0.44) 0%, rgba(26, 61, 99, 0.34) 42%, rgba(74, 127, 167, 0.20) 68%, rgba(246, 250, 253, 0.10) 100%),
+    linear-gradient(180deg, rgba(10, 25, 49, 0.30) 0%, rgba(74, 127, 167, 0.16) 54%, rgba(246, 250, 253, 0.08) 100%);
 }
 .hero-rings {
   position: absolute;
@@ -248,11 +248,11 @@ button, input, textarea, select { font: inherit; }
   max-width: 710px;
   padding: 30px 34px;
   background:
-    linear-gradient(135deg, rgba(246, 250, 253, 0.76), rgba(179, 207, 229, 0.34));
-  border: 1px solid rgba(246, 250, 253, 0.58);
+    linear-gradient(135deg, rgba(246, 250, 253, 0.72), rgba(179, 207, 229, 0.42));
+  border: 1px solid rgba(246, 250, 253, 0.64);
   border-radius: var(--radius);
-  box-shadow: 0 22px 54px rgba(10, 25, 49, 0.16);
-  backdrop-filter: blur(13px) saturate(128%);
+  box-shadow: 0 22px 54px rgba(10, 25, 49, 0.22);
+  backdrop-filter: blur(15px) saturate(135%);
 }
 .script-label {
   display: inline-flex;
@@ -333,12 +333,12 @@ button, input, textarea, select { font: inherit; }
   align-self: end;
   padding: 24px;
   background:
-    linear-gradient(145deg, rgba(246, 250, 253, 0.64), rgba(179, 207, 229, 0.28));
+    linear-gradient(145deg, rgba(246, 250, 253, 0.70), rgba(179, 207, 229, 0.38));
   color: var(--ink);
-  border: 1px solid rgba(246, 250, 253, 0.58);
+  border: 1px solid rgba(246, 250, 253, 0.66);
   border-radius: var(--radius);
-  box-shadow: 0 24px 70px rgba(10, 25, 49, 0.20);
-  backdrop-filter: blur(14px) saturate(130%);
+  box-shadow: 0 24px 70px rgba(10, 25, 49, 0.24);
+  backdrop-filter: blur(16px) saturate(138%);
 }
 .hero-panel img {
   width: 216px;
