@@ -1,0 +1,44 @@
+{
+  "organizationName": "West Nile Hope & Resilience Initiative",
+  "shortName": "WNHRI",
+  "founderName": "Nyolonga Colbert",
+  "motto": "Hope for Children, Dignity for Elders",
+  "heroLabel": "Faith-based non-profit community organization",
+  "heroTitle": "West Nile Hope & Resilience Initiative",
+  "heroText": "Founded by Nyolonga Colbert to restore dignity, hope, and resilience in West Nile.",
+  "mission": "Restore dignity. Build resilience.",
+  "vision": "A dignified West Nile for every vulnerable life.",
+  "contact": {
+    "email": "info@wnhri.org",
+    "whatsapp": "+256 774 139 568",
+    "mobileMoney": "+256 765 455 954",
+    "phone": "+256 786 059 222",
+    "address": "Odianyadri Trading Centre, Eruba Parish, Vurra Sub County, Arua District, West Nile Region, Uganda."
+  },
+  "programs": [
+    {
+      "title": "Drug Rehabilitation",
+      "description": "Counseling, skills, and reintegration."
+    },
+    {
+      "title": "OVC Support",
+      "description": "School support and protection."
+    },
+    {
+      "title": "Palliative & Elderly Care",
+      "description": "Home care with dignity."
+    },
+    {
+      "title": "Climate Resilience",
+      "description": "Trees, water, and local action."
+    },
+    {
+      "title": "Group Empowerment",
+      "description": "Skills, savings, and inclusion."
+    },
+    {
+      "title": "Organizational Support",
+      "description": "Stronger systems for local groups."
+    }
+  ]
+}
