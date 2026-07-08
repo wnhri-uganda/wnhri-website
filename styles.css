@@ -21,7 +21,10 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+}
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -53,12 +56,14 @@ button, input, textarea, select { font: inherit; }
 .section-pad { padding: 82px 0; }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(16px);
-  box-shadow: 0 1px 0 rgba(7, 19, 18, 0.08);
+  background: rgba(255, 247, 234, 0.66);
+  backdrop-filter: blur(14px) saturate(130%);
+  box-shadow: 0 1px 0 rgba(7, 19, 18, 0.07);
 }
 .topbar {
   display: none;
@@ -123,7 +128,7 @@ button, input, textarea, select { font: inherit; }
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--forest);
-  background: rgba(14, 91, 72, 0.08);
+  background: rgba(255, 255, 255, 0.34);
 }
 .nav-links .nav-cta {
   margin-left: 8px;
@@ -151,12 +156,12 @@ button, input, textarea, select { font: inherit; }
 }
 
 .hero {
-  min-height: calc(100svh - 82px);
+  min-height: 100svh;
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  color: white;
-  background: var(--charcoal);
+  color: var(--ink);
+  background: #f3e8d8;
 }
 .hero-image,
 .hero-shade {
@@ -169,14 +174,14 @@ button, input, textarea, select { font: inherit; }
   z-index: -4;
   object-fit: cover;
   object-position: center 36%;
-  filter: grayscale(100%);
+  filter: saturate(0.92) contrast(0.96) brightness(1.04);
 }
 .hero-shade {
   z-index: -3;
   background:
-    radial-gradient(circle at 82% 18%, rgba(255, 107, 44, 0.34), transparent 24%),
-    linear-gradient(90deg, rgba(7, 19, 18, 0.92) 0%, rgba(7, 19, 18, 0.72) 45%, rgba(7, 19, 18, 0.38) 100%),
-    linear-gradient(180deg, rgba(7, 19, 18, 0.18) 0%, rgba(7, 19, 18, 0.74) 100%);
+    radial-gradient(circle at 82% 18%, rgba(255, 183, 77, 0.28), transparent 25%),
+    linear-gradient(90deg, rgba(255, 247, 234, 0.86) 0%, rgba(255, 247, 234, 0.66) 48%, rgba(255, 247, 234, 0.40) 100%),
+    linear-gradient(180deg, rgba(255, 247, 234, 0.72) 0%, rgba(255, 247, 234, 0.34) 100%);
 }
 .hero-rings {
   position: absolute;
@@ -184,29 +189,29 @@ button, input, textarea, select { font: inherit; }
   width: 250px;
   height: 250px;
   z-index: -2;
-  border: 1px solid rgba(255, 255, 255, 0.30);
+  border: 1px solid rgba(10, 59, 53, 0.24);
   border-radius: 50%;
 }
 .hero-rings::after {
   content: "";
   position: absolute;
   inset: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(10, 59, 53, 0.16);
   border-radius: 50%;
 }
 .hero-grid {
-  min-height: calc(100svh - 82px);
+  min-height: 100svh;
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) 360px;
   gap: 56px;
   align-items: center;
-  padding: 60px 0 74px;
+  padding: 118px 0 74px;
 }
 .script-label {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--gold);
+  color: #c46816;
   font-size: 0.84rem;
   font-weight: 700;
 }
@@ -232,12 +237,15 @@ button, input, textarea, select { font: inherit; }
   font-size: clamp(2.45rem, 4.8vw, 4.65rem);
   font-weight: 700;
   letter-spacing: 0;
+  color: #102522;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.42);
 }
 .hero p {
   max-width: 660px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.86);
+  color: #24313f;
   font-size: clamp(0.98rem, 1.25vw, 1.12rem);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.30);
 }
 .hero-actions {
   display: flex;
@@ -263,12 +271,12 @@ button, input, textarea, select { font: inherit; }
 .btn-primary {
   color: #20170a;
   background: var(--gold);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 14px 28px rgba(166, 99, 19, 0.22);
 }
 .btn-ghost {
-  color: white;
-  background: rgba(255, 255, 255, 0.10);
-  border-color: rgba(255, 255, 255, 0.34);
+  color: var(--forest-2);
+  background: rgba(255, 255, 255, 0.32);
+  border-color: rgba(10, 59, 53, 0.22);
 }
 .btn-dark {
   color: white;
@@ -277,13 +285,12 @@ button, input, textarea, select { font: inherit; }
 .hero-panel {
   align-self: end;
   padding: 22px;
-  color: white;
-  background: rgba(255, 247, 234, 0.94);
+  background: rgba(255, 247, 234, 0.70);
   color: var(--ink);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.42);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(8px);
+  box-shadow: 0 18px 52px rgba(7, 19, 18, 0.14);
+  backdrop-filter: blur(10px);
 }
 .hero-panel img {
   width: 216px;
