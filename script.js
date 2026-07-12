@@ -117,7 +117,7 @@ const openLightbox = (img) => {
   document.body.style.overflow = 'hidden';
 };
 
-document.querySelectorAll('.gallery-grid img, .story-grid img').forEach((img) => {
+document.querySelectorAll('.gallery-grid img, .story-grid img, .children-collage img').forEach((img) => {
   img.addEventListener('click', () => openLightbox(img));
 });
 
