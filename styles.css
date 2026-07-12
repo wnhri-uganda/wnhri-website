@@ -1502,20 +1502,43 @@ address {
     width: 200px;
   }
   .image-collage {
-    min-height: auto;
-    grid-template-columns: 1fr;
+    min-height: 0;
+    grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+    gap: 12px;
+    align-items: end;
   }
   .children-collage {
-    min-height: auto;
-    grid-template-columns: 1fr;
+    min-height: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
-  .collage-main,
-  .collage-tall,
-  .collage-small {
+  .collage-main {
+    grid-column: 1;
+    grid-row: 1;
     position: static;
     width: 100% !important;
-    height: 340px;
+    height: clamp(235px, 56vw, 320px);
     border: 0;
+  }
+  .collage-tall {
+    grid-column: 2;
+    grid-row: 1;
+    position: static;
+    width: 100% !important;
+    height: clamp(250px, 62vw, 360px);
+    margin-top: 42px;
+    border: 0;
+  }
+  .collage-small {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    z-index: 1;
+    justify-self: center;
+    width: min(82%, 380px) !important;
+    height: clamp(180px, 42vw, 250px);
+    margin-top: -28px;
+    border: 6px solid var(--paper);
   }
   .child-photo,
   .child-feature,
@@ -1523,15 +1546,25 @@ address {
     position: static;
     width: 100%;
     min-height: 0;
-    height: 340px;
+    height: clamp(180px, 45vw, 280px);
     border: 0;
     grid-row: span 1;
   }
+  .child-feature {
+    grid-row: span 2;
+    height: auto;
+    min-height: clamp(372px, 92vw, 572px);
+  }
+  .child-small {
+    grid-column: 2;
+    grid-row: auto;
+  }
   .collage-badge {
-    right: 18px;
-    bottom: 18px;
-    width: 126px;
-    height: 126px;
+    z-index: 2;
+    right: 10%;
+    bottom: 12px;
+    width: 116px;
+    height: 116px;
   }
   .check-list { grid-template-columns: 1fr; }
   .identity-card { min-height: 330px; padding: 26px; }
@@ -1554,9 +1587,6 @@ address {
   .identity-card h2,
   .founder-copy h2,
   .contact-copy h2 { font-size: clamp(1.7rem, 8vw, 2.35rem); }
-  .collage-main,
-  .collage-tall,
-  .collage-small,
   .gallery-grid img,
   .gallery-large img,
   .story-card,
@@ -1564,6 +1594,34 @@ address {
   .child-photo,
   .child-feature,
   .child-small { min-height: 0; height: 320px; }
+  .image-collage { gap: 10px; }
+  .collage-main { height: 230px; }
+  .collage-tall {
+    height: 255px;
+    margin-top: 34px;
+  }
+  .collage-small {
+    width: 84% !important;
+    height: 178px;
+    margin-top: -24px;
+    border-width: 5px;
+  }
+  .child-photo,
+  .child-small { height: 190px; }
+  .child-feature {
+    height: auto;
+    min-height: 392px;
+  }
+  .collage-badge {
+    width: 96px;
+    height: 96px;
+    right: 8%;
+  }
+  .collage-badge strong { font-size: 1.25rem; }
+  .collage-badge span {
+    padding: 0 12px;
+    font-size: 0.68rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
