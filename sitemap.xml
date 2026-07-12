@@ -5,27 +5,27 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://wnhri.org/about.html</loc>
+    <loc>https://wnhri.org/about</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wnhri.org/programs.html</loc>
+    <loc>https://wnhri.org/programs</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wnhri.org/founder.html</loc>
+    <loc>https://wnhri.org/founder</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wnhri.org/donate.html</loc>
+    <loc>https://wnhri.org/donate</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://wnhri.org/gallery.html</loc>
+    <loc>https://wnhri.org/gallery</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wnhri.org/contact.html</loc>
+    <loc>https://wnhri.org/contact</loc>
     <priority>0.8</priority>
   </url>
 </urlset>

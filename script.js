@@ -8,6 +8,7 @@ const lightbox = document.querySelector('#lightbox');
 const lightboxImg = lightbox?.querySelector('img');
 const lightboxClose = document.querySelector('.lightbox-close');
 const contactForm = document.querySelector('#contactForm');
+const backToTopLinks = document.querySelectorAll('.back-to-top');
 
 if (year) year.textContent = new Date().getFullYear();
 
@@ -52,6 +53,14 @@ navItems.forEach((item) => {
     navLinks.classList.remove('open');
     navToggle.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+backToTopLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    history.replaceState(null, '', window.location.pathname + window.location.search);
   });
 });
 
