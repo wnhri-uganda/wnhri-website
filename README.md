@@ -13,6 +13,8 @@ Deploy this repository on Vercel as a static site:
 
 The project includes `vercel.json` for static asset caching and basic security headers.
 
+If the domain is registered at Namecheap but uses Cloudflare nameservers, DNS must be edited in Cloudflare, not Namecheap. Keep the Cloudflare Email Routing `MX`/`TXT` records for `info@wnhri.org`, and add only the Vercel website `A`/`CNAME` records in Cloudflare.
+
 ## CMS
 
 The free CMS path for this Vercel deployment is Pages CMS.

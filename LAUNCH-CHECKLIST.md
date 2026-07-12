@@ -11,14 +11,45 @@
 4. Deploy.
 5. Add the custom domain: `wnhri.org`.
 
-## 2. Connect the Domain
+## 2. Connect the Domain with Namecheap + Cloudflare + Vercel
 
-In the domain/DNS provider, follow the DNS records Vercel gives you. After DNS is active, make sure these URLs work:
+Your Namecheap setup is already correct for Cloudflare: keep the nameservers set to:
+
+- `kenneth.ns.cloudflare.com`
+- `serena.ns.cloudflare.com`
+
+Because the nameservers point to Cloudflare, do not add Vercel DNS records inside Namecheap. Add them inside Cloudflare instead.
+
+1. In Vercel, open the project.
+2. Go to `Settings` -> `Domains`.
+3. Add `wnhri.org`.
+4. Also add `www.wnhri.org` if Vercel prompts for it.
+5. Vercel will show the DNS records it needs.
+6. In Cloudflare, open `wnhri.org` -> `DNS` -> `Records`.
+7. Add or update the website records:
+   - Apex/root domain: add the `A` record Vercel shows for `@`. Vercel commonly uses `76.76.21.21`, but use the exact value shown in your Vercel dashboard.
+   - `www`: add the `CNAME` record Vercel shows. Vercel commonly uses `cname.vercel-dns.com`, but use the exact value shown in your Vercel dashboard.
+8. Set the Vercel website records to `DNS only` in Cloudflare while Vercel verifies the domain.
+9. Do not delete Cloudflare Email Routing records. Keep the `MX`, `TXT` SPF, and `TXT` DKIM records that Cloudflare created for email.
+10. If Cloudflare says a record already exists for `@` or `www`, replace only the old website `A`, `AAAA`, or `CNAME` record. Do not touch mail records.
+11. Wait 5-15 minutes, then return to Vercel and click verify/refresh. DNS can sometimes take up to 24 hours.
+
+After DNS is active, make sure these URLs work:
 
 - `https://wnhri.org/`
 - `https://wnhri.org/sitemap.xml`
 - `https://wnhri.org/robots.txt`
 - `https://wnhri.org/donate.html`
+
+### Cloudflare Email Routing
+
+Keep Cloudflare Email Routing enabled for `info@wnhri.org`.
+
+- Cloudflare should have `MX` records for the root domain.
+- Cloudflare should have a `TXT` SPF record that includes `_spf.mx.cloudflare.net`.
+- Cloudflare should have a DKIM `TXT` record.
+- If another SPF record already exists, merge the SPF values into one TXT record. Do not create two separate SPF records.
+- Create or confirm the route from `info@wnhri.org` to the owner's destination inbox.
 
 ## 3. Set Up the Free CMS
 
