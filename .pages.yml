@@ -15,9 +15,6 @@ content:
       - name: shortName
         label: Short Name
         type: string
-      - name: founderName
-        label: Founder Name
-        type: string
       - name: motto
         label: Motto
         type: string

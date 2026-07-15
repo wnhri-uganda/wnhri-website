@@ -86,7 +86,7 @@ The extra links under a Google result are called sitelinks. Google chooses them 
 - Sitemap
 - Robots file
 - Structured data
-- Separate pages for About, Programs, Founder, Donate, Gallery, and Contact
+- Separate pages for About, Programs, Donate, Gallery, and Contact
 
 For best results, keep the domain active, share the website link publicly, add it to official social profiles, and keep content consistent with the full organization name: West Nile Hope & Resilience Initiative.
 

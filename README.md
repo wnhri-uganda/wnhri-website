@@ -33,7 +33,7 @@ The `/admin/` page now points editors to Pages CMS.
 - `index.html` includes canonical URL, Open Graph tags, and JSON-LD structured data.
 - `sitemap.xml` lists the homepage and crawlable sitelink pages.
 - `robots.txt` points search engines to the sitemap.
-- Navigation and sitemap include About, Programs, Founder, Donate, Gallery, and Contact.
+- Navigation and sitemap include About, Programs, Donate, Gallery, and Contact.
 
 Google ranking and sitelinks cannot be forced. The site is prepared correctly, but Google decides when to rank it and which extra links to show.
 
