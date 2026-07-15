@@ -380,7 +380,7 @@ button, input, textarea, select { font: inherit; }
   background:
     radial-gradient(circle at 84% 18%, rgba(74, 127, 167, 0.34), transparent 26%),
     linear-gradient(135deg, rgba(10, 25, 49, 0.96), rgba(26, 61, 99, 0.90)),
-    url("assets/gallery/community-home-visit.jpg") center / cover;
+    url("assets/gallery/community-home-visit.jpg?v=20260715-face-blur") center / cover;
 }
 .subpage-hero h1 {
   max-width: 920px;
@@ -630,14 +630,14 @@ button, input, textarea, select { font: inherit; }
   color: white;
   background:
     linear-gradient(180deg, rgba(10, 25, 49, 0.10), rgba(10, 25, 49, 0.88)),
-    url("assets/gallery/elderly-man-checkup.jpg") center / cover;
+    url("assets/gallery/elderly-man-checkup.jpg?v=20260715-face-blur") center / cover;
   border-radius: var(--radius);
   overflow: hidden;
 }
 .identity-card.light {
   background:
     linear-gradient(180deg, rgba(26, 61, 99, 0.08), rgba(10, 25, 49, 0.86)),
-    url("assets/gallery/home-care-woman.jpg") center / cover;
+    url("assets/gallery/home-care-woman.jpg?v=20260715-face-blur") center / cover;
 }
 .identity-card span {
   color: var(--gold);
@@ -994,7 +994,7 @@ button, input, textarea, select { font: inherit; }
   background:
     radial-gradient(circle at 82% 18%, rgba(179, 207, 229, 0.38), transparent 28%),
     linear-gradient(135deg, rgba(10, 25, 49, 0.94), rgba(26, 61, 99, 0.84)),
-    url("assets/gallery/wheelchair-support-client.jpg") center / cover;
+    url("assets/gallery/wheelchair-support-client.jpg?v=20260715-face-blur") center / cover;
 }
 .giving-section {
   background:
