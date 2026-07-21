@@ -3,6 +3,17 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.wnhri.org"
+        }
+      ],
+      "destination": "https://wnhri.org/$1",
+      "permanent": true
+    },
+    {
       "source": "/index",
       "destination": "/",
       "permanent": true
