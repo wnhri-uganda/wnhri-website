@@ -17,16 +17,25 @@ If the domain is registered at Namecheap but uses Cloudflare nameservers, DNS mu
 
 ## CMS
 
-The free CMS path for this Vercel deployment is Pages CMS.
+The website uses the free, open-source Pages CMS with the existing GitHub and Vercel deployment.
 
+- Website editor shortcut: `https://wnhri.org/admin/`
 - CMS app: `https://app.pagescms.org/`
 - Config file: `.pages.yml`
-- Editable content: `content/site.json`
-- Future image uploads: `assets/uploads`
+- General text and programs: `content/site.json`
+- Page, collage, background, logo, donation, and footer images: `content/images.json`
+- Addable gallery images and captions: `content/gallery.json`
+- Image media library and uploads: `assets`
 
 Install/connect Pages CMS to the GitHub repository `wnhri-uganda/wnhri-website`, then sign in with a GitHub account that has access to the repo.
 
-The `/admin/` page now points editors to Pages CMS.
+In Pages CMS:
+
+1. Open **Website Images** to replace the logo, page headers, home-page images, collages, mission/vision backgrounds, donation images, or footer icons.
+2. Open **Gallery Images and Captions** to add, remove, reorder, or caption photos. The first five Main Gallery images also appear on the home page.
+3. Save the entry. Pages CMS commits the change to GitHub and Vercel deploys the updated site automatically.
+
+Uploads receive unique filenames, and website images are revalidated by browsers so replacements do not remain stuck behind an old cache.
 
 ## SEO
 

@@ -1,0 +1,114 @@
+{
+  "branding": {
+    "logo": {
+      "image": "/assets/logo.png",
+      "alt": "West Nile Hope & Resilience Initiative logo"
+    }
+  },
+  "shared": {
+    "subpageHero": {
+      "image": "/assets/gallery/community-home-visit.jpg?v=20260715-face-blur-9",
+      "alt": "WNHRI community home visit in West Nile"
+    }
+  },
+  "home": {
+    "hero": {
+      "image": "/assets/gallery/community-home-visit.jpg?v=20260715-face-blur-9",
+      "alt": "Community home visit with elderly women receiving WNHRI support"
+    },
+    "aboutCollage": {
+      "main": {
+        "image": "/assets/gallery/home-care-woman.jpg?v=20260715-face-blur-9",
+        "alt": "Home-based monitoring for an elderly woman"
+      },
+      "tall": {
+        "image": "/assets/gallery/wheelchair-support-client.jpg?v=20260715-face-blur-9",
+        "alt": "Wheelchair support for an elderly client"
+      },
+      "small": {
+        "image": "/assets/gallery/elderly-woman-checkup.jpg?v=20260720-face-cover-10",
+        "alt": "Blood pressure check during community care"
+      }
+    },
+    "childrenCollage": {
+      "featured": {
+        "image": "/assets/gallery/field-stories/children-family-outreach.jpg?v=20260720-original-faces",
+        "alt": "Children and families gathered during WNHRI outreach",
+        "caption": "Family outreach"
+      },
+      "top": {
+        "image": "/assets/gallery/field-stories/child-counselling-circle.jpg?v=20260720-original-faces",
+        "alt": "Children seated in a counselling circle outdoors",
+        "caption": "Counselling"
+      },
+      "bottom": {
+        "image": "/assets/gallery/field-stories/learning-under-trees.jpg?v=20260715-face-blur-9",
+        "alt": "Children learning under trees due to limited classrooms",
+        "caption": "Education needs"
+      },
+      "floating": {
+        "image": "/assets/gallery/field-stories/school-footwear-need.jpg?v=20260715-face-blur-9",
+        "alt": "School-age child in need of footwear support",
+        "caption": "School support"
+      }
+    },
+    "missionBackground": {
+      "image": "/assets/gallery/elderly-man-checkup.jpg?v=20260715-face-blur-9",
+      "alt": "Community health check for an elderly man"
+    },
+    "visionBackground": {
+      "image": "/assets/gallery/home-care-woman.jpg?v=20260715-face-blur-9",
+      "alt": "Home-based care visit in West Nile"
+    }
+  },
+  "about": {
+    "collage": {
+      "main": {
+        "image": "/assets/gallery/home-care-woman.jpg?v=20260715-face-blur-9",
+        "alt": "Home-based monitoring"
+      },
+      "tall": {
+        "image": "/assets/gallery/wheelchair-support-client.jpg?v=20260715-face-blur-9",
+        "alt": "Wheelchair support"
+      },
+      "small": {
+        "image": "/assets/gallery/elderly-woman-checkup.jpg?v=20260720-face-cover-10",
+        "alt": "Elderly care checkup"
+      }
+    },
+    "visionBackground": {
+      "image": "/assets/gallery/community-home-visit.jpg?v=20260715-face-blur-9",
+      "alt": "WNHRI community home visit"
+    },
+    "missionBackground": {
+      "image": "/assets/gallery/field-stories/community-dialogue-gathering.jpg?v=20260715-face-blur-9",
+      "alt": "WNHRI community dialogue gathering"
+    }
+  },
+  "donate": {
+    "hero": {
+      "image": "/assets/gallery/wheelchair-support-client.jpg?v=20260715-face-blur-9",
+      "alt": "WNHRI mobility support for a community member"
+    },
+    "inPerson": {
+      "image": "/assets/donation-in-person.jpg",
+      "alt": "Hands exchanging a donation box"
+    },
+    "mobileMoney": {
+      "image": "/assets/donation-mobile-money.jpg",
+      "alt": "MTN MoMo logo"
+    },
+    "bank": {
+      "image": "/assets/donation-bank.jpg",
+      "alt": "Centenary Bank logo"
+    }
+  },
+  "socialIcons": {
+    "instagram": "/assets/social/instagram.jpg",
+    "email": "/assets/social/email.jpg",
+    "maps": "/assets/social/maps.jpg",
+    "tiktok": "/assets/social/tiktok.jpg",
+    "whatsapp": "/assets/social/whatsapp.jpg",
+    "phone": "/assets/social/phone.jpg"
+  }
+}

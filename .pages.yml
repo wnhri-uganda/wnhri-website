@@ -1,13 +1,115 @@
 media:
-  input: assets/uploads
-  output: /assets/uploads
+  input: assets
+  output: /assets
+  rename: random
+  categories: [image]
+  extensions: [jpg, jpeg, png, webp, avif]
+  commit:
+    templates:
+      create: "CMS: upload {filename}"
+      update: "CMS: update {filename}"
+      delete: "CMS: remove {filename}"
+      rename: "CMS: rename {oldFilename} to {newFilename}"
+
+components:
+  image_asset:
+    type: object
+    fields:
+      - name: image
+        label: Image
+        type: image
+        required: true
+        description: Upload a new image or choose one already in the website media library.
+      - name: alt
+        label: Image Description
+        type: string
+        required: true
+        description: Briefly describe what is visible for visitors using screen readers.
+
+  captioned_image:
+    type: object
+    fields:
+      - name: image
+        label: Image
+        type: image
+        required: true
+        description: Upload a new image or choose one already in the website media library.
+      - name: alt
+        label: Image Description
+        type: string
+        required: true
+        description: Briefly describe what is visible for visitors using screen readers.
+      - name: caption
+        label: Caption
+        type: string
+        required: true
+
+  gallery_highlight:
+    type: object
+    fields:
+      - name: image
+        label: Image
+        type: image
+        required: true
+      - name: alt
+        label: Image Description
+        type: string
+        required: true
+      - name: caption
+        label: Caption
+        type: string
+        required: true
+      - name: layout
+        label: Display Size
+        type: select
+        description: Use Featured for an important image; Standard fits the regular grid.
+        options:
+          values:
+            - name: standard
+              label: Standard
+            - name: large
+              label: Featured
+
+  gallery_story:
+    type: object
+    fields:
+      - name: image
+        label: Image
+        type: image
+        required: true
+      - name: alt
+        label: Image Description
+        type: string
+        required: true
+      - name: title
+        label: Caption Title
+        type: string
+        required: true
+      - name: caption
+        label: Caption Details
+        type: text
+        required: true
+      - name: layout
+        label: Display Size
+        type: select
+        description: Standard works for most images. Wide and Tall can be used for selected photos.
+        options:
+          values:
+            - name: standard
+              label: Standard
+            - name: wide
+              label: Wide
+            - name: tall
+              label: Tall
 
 content:
   - name: site_settings
-    label: Site Settings
+    label: Site Content
     type: file
     path: content/site.json
     format: json
+    operations:
+      delete: false
     fields:
       - name: organizationName
         label: Organization Full Name
@@ -55,7 +157,10 @@ content:
       - name: programs
         label: Programs
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
         fields:
           - name: title
             label: Title
@@ -63,3 +168,160 @@ content:
           - name: description
             label: Description
             type: text
+
+  - name: website_images
+    label: Website Images
+    type: file
+    path: content/images.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: branding
+        label: Branding
+        type: object
+        fields:
+          - name: logo
+            label: Website Logo
+            component: image_asset
+
+      - name: shared
+        label: Images Shared Across Pages
+        type: object
+        fields:
+          - name: subpageHero
+            label: About, Programs, Gallery and Contact Header
+            component: image_asset
+
+      - name: home
+        label: Home Page Images
+        type: object
+        fields:
+          - name: hero
+            label: Main Home Page Image
+            component: image_asset
+          - name: aboutCollage
+            label: Home Page About Collage
+            type: object
+            fields:
+              - name: main
+                label: Main Collage Image
+                component: image_asset
+              - name: tall
+                label: Tall Collage Image
+                component: image_asset
+              - name: small
+                label: Small Collage Image
+                component: image_asset
+          - name: childrenCollage
+            label: Children Collage
+            type: object
+            fields:
+              - name: featured
+                label: Large Featured Image
+                component: captioned_image
+              - name: top
+                label: Top Right Image
+                component: captioned_image
+              - name: bottom
+                label: Bottom Right Image
+                component: captioned_image
+              - name: floating
+                label: Small Floating Image
+                component: captioned_image
+          - name: missionBackground
+            label: Mission Card Background
+            component: image_asset
+          - name: visionBackground
+            label: Vision Card Background
+            component: image_asset
+
+      - name: about
+        label: About Page Images
+        type: object
+        fields:
+          - name: collage
+            label: About Page Collage
+            type: object
+            fields:
+              - name: main
+                label: Main Collage Image
+                component: image_asset
+              - name: tall
+                label: Tall Collage Image
+                component: image_asset
+              - name: small
+                label: Small Collage Image
+                component: image_asset
+          - name: visionBackground
+            label: Vision Card Background
+            component: image_asset
+          - name: missionBackground
+            label: Mission Card Background
+            component: image_asset
+
+      - name: donate
+        label: Donate Page Images
+        type: object
+        fields:
+          - name: hero
+            label: Donate Page Header
+            component: image_asset
+          - name: inPerson
+            label: In-Person Donation Image
+            component: image_asset
+          - name: mobileMoney
+            label: Mobile Money Image
+            component: image_asset
+          - name: bank
+            label: Bank Donation Image
+            component: image_asset
+
+      - name: socialIcons
+        label: Contact and Social Icons
+        type: object
+        description: These are the small icons shown in the footer.
+        fields:
+          - name: instagram
+            label: Instagram Icon
+            type: image
+          - name: email
+            label: Email Icon
+            type: image
+          - name: maps
+            label: Google Maps Icon
+            type: image
+          - name: tiktok
+            label: TikTok Icon
+            type: image
+          - name: whatsapp
+            label: WhatsApp Icon
+            type: image
+          - name: phone
+            label: Phone Icon
+            type: image
+
+  - name: gallery
+    label: Gallery Images and Captions
+    type: file
+    path: content/gallery.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: highlights
+        label: Main Gallery
+        component: gallery_highlight
+        description: These images appear on the Gallery page. The first five also appear on the home page.
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{caption}"
+      - name: stories
+        label: Field Stories
+        component: gallery_story
+        description: Add, remove, reorder, and caption field-story images here.
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
