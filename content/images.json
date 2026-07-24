@@ -7,87 +7,87 @@
   },
   "shared": {
     "subpageHero": {
-      "image": "/assets/gallery/community-home-visit.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/community-home-visit.jpg",
       "alt": "WNHRI community home visit in West Nile"
     }
   },
   "home": {
     "hero": {
-      "image": "/assets/gallery/community-home-visit.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/community-home-visit.jpg",
       "alt": "Community home visit with elderly women receiving WNHRI support"
     },
     "aboutCollage": {
       "main": {
-        "image": "/assets/gallery/home-care-woman.jpg?v=20260715-face-blur-9",
+        "image": "/assets/gallery/home-care-woman.jpg",
         "alt": "Home-based monitoring for an elderly woman"
       },
       "tall": {
-        "image": "/assets/gallery/wheelchair-support-client.jpg?v=20260715-face-blur-9",
+        "image": "/assets/gallery/wheelchair-support-client.jpg",
         "alt": "Wheelchair support for an elderly client"
       },
       "small": {
-        "image": "/assets/gallery/elderly-woman-checkup.jpg?v=20260720-face-cover-10",
+        "image": "/assets/gallery/elderly-woman-checkup.jpg",
         "alt": "Blood pressure check during community care"
       }
     },
     "childrenCollage": {
       "featured": {
-        "image": "/assets/gallery/field-stories/children-family-outreach.jpg?v=20260720-original-faces",
+        "image": "/assets/gallery/field-stories/children-family-outreach.jpg",
         "alt": "Children and families gathered during WNHRI outreach",
         "caption": "Family outreach"
       },
       "top": {
-        "image": "/assets/gallery/field-stories/child-counselling-circle.jpg?v=20260720-original-faces",
+        "image": "/assets/gallery/field-stories/child-counselling-circle.jpg",
         "alt": "Children seated in a counselling circle outdoors",
         "caption": "Counselling"
       },
       "bottom": {
-        "image": "/assets/gallery/field-stories/learning-under-trees.jpg?v=20260715-face-blur-9",
+        "image": "/assets/gallery/field-stories/learning-under-trees.jpg",
         "alt": "Children learning under trees due to limited classrooms",
         "caption": "Education needs"
       },
       "floating": {
-        "image": "/assets/gallery/field-stories/school-footwear-need.jpg?v=20260715-face-blur-9",
+        "image": "/assets/gallery/field-stories/school-footwear-need.jpg",
         "alt": "School-age child in need of footwear support",
         "caption": "School support"
       }
     },
     "missionBackground": {
-      "image": "/assets/gallery/elderly-man-checkup.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/elderly-man-checkup.jpg",
       "alt": "Community health check for an elderly man"
     },
     "visionBackground": {
-      "image": "/assets/gallery/home-care-woman.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/home-care-woman.jpg",
       "alt": "Home-based care visit in West Nile"
     }
   },
   "about": {
     "collage": {
       "main": {
-        "image": "/assets/gallery/home-care-woman.jpg?v=20260715-face-blur-9",
+        "image": "/assets/gallery/home-care-woman.jpg",
         "alt": "Home-based monitoring"
       },
       "tall": {
-        "image": "/assets/gallery/wheelchair-support-client.jpg?v=20260715-face-blur-9",
+        "image": "/assets/gallery/wheelchair-support-client.jpg",
         "alt": "Wheelchair support"
       },
       "small": {
-        "image": "/assets/gallery/elderly-woman-checkup.jpg?v=20260720-face-cover-10",
+        "image": "/assets/gallery/elderly-woman-checkup.jpg",
         "alt": "Elderly care checkup"
       }
     },
     "visionBackground": {
-      "image": "/assets/gallery/community-home-visit.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/community-home-visit.jpg",
       "alt": "WNHRI community home visit"
     },
     "missionBackground": {
-      "image": "/assets/gallery/field-stories/community-dialogue-gathering.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/community-dialogue-gathering.jpg",
       "alt": "WNHRI community dialogue gathering"
     }
   },
   "donate": {
     "hero": {
-      "image": "/assets/gallery/wheelchair-support-client.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/wheelchair-support-client.jpg",
       "alt": "WNHRI mobility support for a community member"
     },
     "inPerson": {

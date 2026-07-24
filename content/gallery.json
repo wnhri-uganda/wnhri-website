@@ -1,31 +1,31 @@
 {
   "highlights": [
     {
-      "image": "/assets/gallery/community-home-visit.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/community-home-visit.jpg",
       "alt": "Community home visit with elderly women",
       "caption": "Community visit.",
       "layout": "large"
     },
     {
-      "image": "/assets/gallery/home-care-woman.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/home-care-woman.jpg",
       "alt": "Taking a blood pressure reading during a home visit",
       "caption": "Home monitoring.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/elderly-man-checkup.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/elderly-man-checkup.jpg",
       "alt": "Blood pressure check for an elderly man",
       "caption": "Basic health checks.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/elderly-woman-checkup.jpg?v=20260720-face-cover-10",
+      "image": "/assets/gallery/elderly-woman-checkup.jpg",
       "alt": "Caregiver taking a blood pressure reading",
       "caption": "Household care.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/wheelchair-support-client.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/wheelchair-support-client.jpg",
       "alt": "Palliative client supported with a wheelchair",
       "caption": "Mobility support.",
       "layout": "standard"
@@ -33,98 +33,98 @@
   ],
   "stories": [
     {
-      "image": "/assets/gallery/field-stories/community-sensitization-drama.jpg?v=20260720-face-cover-10",
+      "image": "/assets/gallery/field-stories/community-sensitization-drama.jpg",
       "alt": "Community drama about the dangers of alcoholism",
       "title": "Community sensitization",
       "caption": "Drama on the dangers of alcoholism.",
       "layout": "tall"
     },
     {
-      "image": "/assets/gallery/field-stories/community-dialogue-gathering.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/community-dialogue-gathering.jpg",
       "alt": "Community gathering during a WNHRI outreach meeting",
       "title": "Community dialogue",
       "caption": "Open-air gathering with families and local leaders.",
       "layout": "wide"
     },
     {
-      "image": "/assets/gallery/field-stories/children-family-outreach.jpg?v=20260720-original-faces",
+      "image": "/assets/gallery/field-stories/children-family-outreach.jpg",
       "alt": "Children and families gathered during outreach",
       "title": "Children reached",
       "caption": "Family and child support during outreach.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/field-stories/household-family-support.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/household-family-support.jpg",
       "alt": "Household support visit with a caregiver and child",
       "title": "Household follow-up",
       "caption": "Family support close to home.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/field-stories/school-footwear-need.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/school-footwear-need.jpg",
       "alt": "School-age child in need of footwear support",
       "title": "School support needs",
       "caption": "Children needing footwear and protection support.",
       "layout": "tall"
     },
     {
-      "image": "/assets/gallery/field-stories/child-counselling-circle.jpg?v=20260720-original-faces",
+      "image": "/assets/gallery/field-stories/child-counselling-circle.jpg",
       "alt": "Children seated in a counselling circle outdoors",
       "title": "Child counselling",
       "caption": "Safe spaces for vulnerable children.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/field-stories/ovc-household-support.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/ovc-household-support.jpg",
       "alt": "Children receiving household support",
       "title": "OVC support",
       "caption": "Support for children in household care.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/field-stories/learning-under-trees.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/learning-under-trees.jpg",
       "alt": "Children learning under trees due to limited classrooms",
       "title": "Learning under trees",
       "caption": "Education needs where classrooms are limited.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/field-stories/outdoor-classroom-session.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/outdoor-classroom-session.jpg",
       "alt": "Outdoor classroom session under a tree",
       "title": "Outdoor classrooms",
       "caption": "Learners gathered beneath shade trees.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/field-stories/shelter-vulnerability-visit.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/shelter-vulnerability-visit.jpg",
       "alt": "Shelter vulnerability visit at a rural homestead",
       "title": "Shelter assessment",
       "caption": "Identifying urgent household needs.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/field-stories/wheelchair-mobility-support.jpg?v=20260720-central-man-visible",
+      "image": "/assets/gallery/field-stories/wheelchair-mobility-support.jpg",
       "alt": "Wheelchair support for a person with disability",
       "title": "Mobility assistance",
       "caption": "Wheelchair support donated through WNHRI.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/field-stories/elderly-care-home-visit.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/elderly-care-home-visit.jpg",
       "alt": "Caregiver attending to an elderly woman at home",
       "title": "Elderly care",
       "caption": "Home visit for an elderly sick woman.",
       "layout": "tall"
     },
     {
-      "image": "/assets/gallery/field-stories/caregiver-household-visit.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/caregiver-household-visit.jpg",
       "alt": "Caregiver sitting with an elderly woman during a household visit",
       "title": "Caregiver visit",
       "caption": "Listening, comfort, and household care.",
       "layout": "standard"
     },
     {
-      "image": "/assets/gallery/field-stories/shelter-dignity-support.jpg?v=20260715-face-blur-9",
+      "image": "/assets/gallery/field-stories/shelter-dignity-support.jpg",
       "alt": "Vulnerable household in need of shelter support",
       "title": "Dignity support",
       "caption": "Households identified for shelter assistance.",
