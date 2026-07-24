@@ -804,7 +804,11 @@ button, input, textarea, select { font: inherit; }
 }
 .identity-card h2 {
   color: white;
-  font-size: clamp(1.75rem, 2.8vw, 2.65rem);
+  font-family: "Arial Rounded MT Bold", "Arial Rounded MT", "M PLUS Rounded 1c", "Trebuchet MS", Arial, sans-serif;
+  font-size: clamp(1.12rem, 1.55vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
 }
 .identity-card p {
   color: rgba(255, 255, 255, 0.82);
@@ -1777,8 +1781,8 @@ a.social-link:hover {
   .brand { padding-right: 6px; }
   .hero-grid { padding-top: 124px; }
   .section-heading h2,
-  .identity-card h2,
   .contact-copy h2 { font-size: clamp(1.7rem, 8vw, 2.35rem); }
+  .identity-card h2 { font-size: clamp(1.05rem, 5vw, 1.3rem); }
   .gallery-grid img,
   .gallery-large img,
   .story-card,
